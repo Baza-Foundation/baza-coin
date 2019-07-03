@@ -1,5 +1,6 @@
-Add link to Baza logo + Text image here
+![baza_logo](/uploads/0b441c48e12b26d8a87c0632413ef6d9/baza_logo.png)
 
+# BAZ TOKEN
 
 ### Installing
 
