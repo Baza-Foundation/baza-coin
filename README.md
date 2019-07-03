@@ -40,7 +40,7 @@ If you are using Clang, you will need Clang 6.0 or higher. You will also need li
 - `export CC=gcc-8`
 - `export CXX=g++-8`
 - `git clone -b master --single-branch git@gitlab.ekata.io:baza-foundation/baz-token.git`
-- `cd baza`
+- `cd baz-token`
 - `mkdir build`
 - `cd build`
 - `cmake ..`
@@ -74,7 +74,7 @@ You need to modify the below command for your version of ubuntu - see https://ap
 - `export CC=clang-6.0`
 - `export CXX=clang++-6.0`
 - `git clone -b master --single-branch git@gitlab.ekata.io:baza-foundation/baz-token.git`
-- `cd baza`
+- `cd baz-token`
 - `mkdir build`
 - `cd build`
 - `cmake ..`
@@ -93,7 +93,7 @@ If you want to use clang, ensure you set the environment variables `CC` and `CXX
 See the ubuntu instructions for an example.
 
 - `git clone -b master --single-branch git@gitlab.ekata.io:baza-foundation/baz-token.git`
-- `cd baza`
+- `cd baz-token`
 - `mkdir build`
 - `cd build`
 - `cmake ..`
@@ -117,7 +117,7 @@ The binaries will be in the `src` folder when you are complete.
 - `export CC=gcc-8`
 - `export CXX=g++-8`
 - `git clone -b master --single-branch git@gitlab.ekata.io:baza-foundation/baz-token.git`
-- `cd baza`
+- `cd baz-token`
 - `mkdir build`
 - `cd build`
 - `cmake ..`
@@ -141,7 +141,7 @@ The binaries will be in the `src` folder when you are complete.
 - `export CC=/usr/local/opt/llvm/bin/clang`
 - `export CXX=/usr/local/opt/llvm/bin/clang++`
 - `git clone -b master --single-branch git@gitlab.ekata.io:baza-foundation/baz-token.git`
-- `cd baza`
+- `cd baz-token`
 - `mkdir build`
 - `cd build`
 - `cmake ..`
@@ -191,7 +191,7 @@ Once you have a 64 bit image installed, setup proceeds the same as any Linux dis
 ##### Building
 
 - `git clone -b master --single-branch git@gitlab.ekata.io:baza-foundation/baz-token.git`
-- `cd baza`
+- `cd baz-token`
 - `mkdir build`
 - `cd build`
 - `cmake ..`
