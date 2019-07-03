@@ -1,10 +1,8 @@
-![baza_logo](/uploads/0b441c48e12b26d8a87c0632413ef6d9/baza_logo.png)
-
-# BAZ TOKEN
+![baza_text_logo](/uploads/307bd17ac1afc35997efbf8b24bbf374/baza_text_logo.png)
 
 ### Installing
 
-We offer binary images of the latest releases here: link to release here
+We offer binary images of the latest releases here: [https://gitlab.ekata.io/baza-foundation/baz-token/releases](https://gitlab.ekata.io/baza-foundation/baz-token/releases)
 
 If you would like to compile yourself, read on.
 
@@ -41,7 +39,7 @@ If you are using Clang, you will need Clang 6.0 or higher. You will also need li
 - `sudo pip install cmake`
 - `export CC=gcc-8`
 - `export CXX=g++-8`
-- `git clone -b master --single-branch link to baza repo`
+- `git clone -b master --single-branch git@gitlab.ekata.io:baza-foundation/baz-token.git`
 - `cd baza`
 - `mkdir build`
 - `cd build`
@@ -75,7 +73,7 @@ You need to modify the below command for your version of ubuntu - see https://ap
 - `sudo pip install cmake`
 - `export CC=clang-6.0`
 - `export CXX=clang++-6.0`
-- `git clone -b master --single-branch link to baza repo`
+- `git clone -b master --single-branch git@gitlab.ekata.io:baza-foundation/baz-token.git`
 - `cd baza`
 - `mkdir build`
 - `cd build`
@@ -94,7 +92,7 @@ Ensure you have the dependencies listed above.
 If you want to use clang, ensure you set the environment variables `CC` and `CXX`.
 See the ubuntu instructions for an example.
 
-- `git clone -b master --single-branch link to baza repo`
+- `git clone -b master --single-branch git@gitlab.ekata.io:baza-foundation/baz-token.git`
 - `cd baza`
 - `mkdir build`
 - `cd build`
@@ -118,7 +116,7 @@ The binaries will be in the `src` folder when you are complete.
 - `brew install --force cmake boost llvm gcc@8`
 - `export CC=gcc-8`
 - `export CXX=g++-8`
-- `git clone -b master --single-branch link to baza repo`
+- `git clone -b master --single-branch git@gitlab.ekata.io:baza-foundation/baz-token.git`
 - `cd baza`
 - `mkdir build`
 - `cd build`
@@ -142,7 +140,7 @@ The binaries will be in the `src` folder when you are complete.
 - `brew install --force cmake boost llvm`
 - `export CC=/usr/local/opt/llvm/bin/clang`
 - `export CXX=/usr/local/opt/llvm/bin/clang++`
-- `git clone -b master --single-branch link to baza repo`
+- `git clone -b master --single-branch git@gitlab.ekata.io:baza-foundation/baz-token.git`
 - `cd baza`
 - `mkdir build`
 - `cd build`
@@ -192,7 +190,7 @@ Once you have a 64 bit image installed, setup proceeds the same as any Linux dis
 
 ##### Building
 
-- `git clone -b master --single-branch link to baza repo`
+- `git clone -b master --single-branch git@gitlab.ekata.io:baza-foundation/baz-token.git`
 - `cd baza`
 - `mkdir build`
 - `cd build`
