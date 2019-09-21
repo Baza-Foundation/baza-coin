@@ -17,7 +17,7 @@
 namespace CryptoNote {
 namespace parameters {
 
-const uint64_t DIFFICULTY_TARGET                             = 30; // seconds
+const uint64_t DIFFICULTY_TARGET                             = 60; // seconds
 
 const uint32_t CRYPTONOTE_MAX_BLOCK_NUMBER                   = 500000000;
 const size_t   CRYPTONOTE_MAX_BLOCK_BLOB_SIZE                = 500000000;
@@ -32,7 +32,7 @@ const size_t   BLOCKCHAIN_TIMESTAMP_CHECK_WINDOW             = 60;
 const size_t   BLOCKCHAIN_TIMESTAMP_CHECK_WINDOW_V3          = 11;
 
 // MONEY_SUPPLY - total number coins to be generated
-const uint64_t MONEY_SUPPLY                                  = ((uint64_t)(-1));
+const uint64_t MONEY_SUPPLY                                  = UINT64_C(30000000000000000);
 const uint32_t ZAWY_DIFFICULTY_BLOCK_INDEX                   = 0;
 const size_t   ZAWY_DIFFICULTY_V2                            = 0;
 const uint8_t  ZAWY_DIFFICULTY_DIFFICULTY_BLOCK_VERSION      = 3;
@@ -41,7 +41,7 @@ const uint64_t LWMA_2_DIFFICULTY_BLOCK_INDEX                 = 1;
 const uint64_t LWMA_2_DIFFICULTY_BLOCK_INDEX_V2              = 2;
 const uint64_t LWMA_2_DIFFICULTY_BLOCK_INDEX_V3              = 3;
 
-const unsigned EMISSION_SPEED_FACTOR                         = 25;
+const unsigned EMISSION_SPEED_FACTOR                         = 30;
 static_assert(EMISSION_SPEED_FACTOR <= 8 * sizeof(uint64_t), "Bad EMISSION_SPEED_FACTOR");
 
 /* Premine amount */
@@ -260,7 +260,7 @@ const char     LATEST_VERSION_URL[]                          = "https://gitlab.e
 const std::string LICENSE_URL                                = "https://gitlab.ekata.io/baza-foundation/baz-token/blob/master/LICENSE";
 const static   boost::uuids::uuid CRYPTONOTE_NETWORK         =
 {
-    {  0xb5, 0x0c, 0x4a, 0x6c, 0xcf, 0x52, 0x57, 0x41, 0x65, 0xf9, 0x91, 0xa4, 0xb6, 0xe1, 0x12, 0xcd  }
+    {  0xb5, 0x0c, 0x4a, 0x6c, 0xcf, 0x52, 0x57, 0x41, 0x65, 0xf9, 0xf9, 0xa4, 0xb6, 0x11, 0x02, 0xcd  }
 };
 
 const char* const SEED_NODES[] = {
