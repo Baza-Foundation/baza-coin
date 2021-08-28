@@ -2,7 +2,7 @@
 
 ### Installing
 
-We offer binary images of the latest releases here: [https://gitlab.ekata.io/baza-foundation/baz-token/releases](https://gitlab.ekata.io/baza-foundation/baz-token/releases)
+We offer binary images of the latest releases here: [https://gitlab.ekata.io/baza-foundation/baz-token/releases](https://gitlab.ekata.io/baza-foundation/baz-token/-/releases#0.0.1.7)
 
 If you would like to compile yourself, read on.
 
