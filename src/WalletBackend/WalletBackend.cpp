@@ -32,6 +32,8 @@
 
 #include <iomanip>
 
+#include <boost/filesystem.hpp>
+
 #include "JsonHelper.h"
 
 #include <Logger/Logger.h>
@@ -644,9 +646,7 @@ Error WalletBackend::unsafeSave() const
         cbcEncryption, new StringSink(encryptedData))
     );
 
-    std::ofstream file(m_filename, std::ios_base::binary);
-
-    if (!file)
+    if (!std::ofstream(m_filename, std::ios_base::binary))
     {
         Logger::logger.log(
             std::string("Wallet filename: ") + m_filename + " is invalid",
@@ -656,6 +656,16 @@ Error WalletBackend::unsafeSave() const
 
         return INVALID_WALLET_FILENAME;
     }
+
+    /* Create a temporary filename with same path */
+    /* filename: baza_wallet_api_temp_<unix_timestamp>.wallet */
+    boost::filesystem::path p(m_filename);
+    boost::filesystem::path dir = p.parent_path();
+    boost::filesystem::path temp_filename = dir / boost::filesystem::path(
+        "baza_wallet_api_temp_" + std::to_string(std::time(0)) + ".wallet");
+
+    /* Save the content on the temp file */
+    std::ofstream file(temp_filename.string(), std::ios_base::binary);
 
     std::string saltString = std::string(salt, salt + sizeof(salt));
 
@@ -674,6 +684,10 @@ Error WalletBackend::unsafeSave() const
     std::copy(encryptedData.begin(), encryptedData.end(),
               std::ostreambuf_iterator<char>(file));
 
+    /* Remove the original file and rename the temp file to original file */
+    fs::remove(m_filename);
+    std::rename(temp_filename.c_str(), m_filename.c_str());
+    
     return SUCCESS;
 }
 
