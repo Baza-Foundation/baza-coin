@@ -686,7 +686,7 @@ Error WalletBackend::unsafeSave() const
 
     /* Remove the original file and rename the temp file to original file */
     fs::remove(m_filename);
-    std::rename(temp_filename.c_str(), m_filename.c_str());
+    std::rename(temp_filename.string().c_str(), m_filename.c_str());
     
     return SUCCESS;
 }
