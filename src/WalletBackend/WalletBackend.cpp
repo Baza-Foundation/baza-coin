@@ -684,6 +684,8 @@ Error WalletBackend::unsafeSave() const
     std::copy(encryptedData.begin(), encryptedData.end(),
               std::ostreambuf_iterator<char>(file));
 
+    file.close();
+
     /* Remove the original file and rename the temp file to original file */
     fs::remove(m_filename);
     std::rename(temp_filename.string().c_str(), m_filename.c_str());

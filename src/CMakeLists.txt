@@ -175,3 +175,4 @@ set_property(TARGET WalletApi PROPERTY OUTPUT_NAME "wallet-api")
 # e.g. make pool will build only Bazad and service
 add_custom_target(pool DEPENDS Bazad service)
 add_custom_target(cli DEPENDS Bazad zedwallet)
+add_custom_target(api DEPENDS Bazad WalletApi)

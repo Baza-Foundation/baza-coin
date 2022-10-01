@@ -2,7 +2,7 @@
 
 ### Installing
 
-We offer binary images of the latest releases here: [https://gitlab.ekata.io/baza-foundation/baz-token/releases](https://gitlab.ekata.io/baza-foundation/baz-token/-/releases#0.0.1.8)
+We offer binary images of the latest releases here: [https://gitlab.ekata.io/baza-foundation/baza-coin/-/releases](https://gitlab.ekata.io/baza-foundation/baza-coin/-/releases)
 
 If you would like to compile yourself, read on.
 
@@ -39,8 +39,8 @@ If you are using Clang, you will need Clang 6.0 or higher. You will also need li
 - `sudo pip install cmake`
 - `export CC=gcc-8`
 - `export CXX=g++-8`
-- `git clone -b master --single-branch git@gitlab.ekata.io:baza-foundation/baz-token.git`
-- `cd baz-token`
+- `git clone -b master --single-branch https://gitlab.ekata.io/baza-foundation/baza-coin.git`
+- `cd baza-coin`
 - `mkdir build`
 - `cd build`
 - `cmake ..`
@@ -73,8 +73,8 @@ You need to modify the below command for your version of ubuntu - see https://ap
 - `sudo pip install cmake`
 - `export CC=clang-6.0`
 - `export CXX=clang++-6.0`
-- `git clone -b master --single-branch git@gitlab.ekata.io:baza-foundation/baz-token.git`
-- `cd baz-token`
+- `git clone -b master --single-branch https://gitlab.ekata.io/baza-foundation/baza-coin.git`
+- `cd baza-coin`
 - `mkdir build`
 - `cd build`
 - `cmake ..`
@@ -92,8 +92,8 @@ Ensure you have the dependencies listed above.
 If you want to use clang, ensure you set the environment variables `CC` and `CXX`.
 See the ubuntu instructions for an example.
 
-- `git clone -b master --single-branch git@gitlab.ekata.io:baza-foundation/baz-token.git`
-- `cd baz-token`
+- `git clone -b master --single-branch https://gitlab.ekata.io/baza-foundation/baza-coin.git`
+- `cd baza-coin`
 - `mkdir build`
 - `cd build`
 - `cmake ..`
@@ -116,8 +116,8 @@ The binaries will be in the `src` folder when you are complete.
 - `brew install --force cmake boost llvm gcc@8`
 - `export CC=gcc-8`
 - `export CXX=g++-8`
-- `git clone -b master --single-branch git@gitlab.ekata.io:baza-foundation/baz-token.git`
-- `cd baz-token`
+- `git clone -b master --single-branch https://gitlab.ekata.io/baza-foundation/baza-coin.git`
+- `cd baza-coin`
 - `mkdir build`
 - `cd build`
 - `cmake ..`
@@ -140,8 +140,8 @@ The binaries will be in the `src` folder when you are complete.
 - `brew install --force cmake boost llvm`
 - `export CC=/usr/local/opt/llvm/bin/clang`
 - `export CXX=/usr/local/opt/llvm/bin/clang++`
-- `git clone -b master --single-branch git@gitlab.ekata.io:baza-foundation/baz-token.git`
-- `cd baz-token`
+- `git clone -b master --single-branch https://gitlab.ekata.io/baza-foundation/baza-coin.git`
+- `cd baza-coin`
 - `mkdir build`
 - `cd build`
 - `cmake ..`
@@ -190,8 +190,8 @@ Once you have a 64 bit image installed, setup proceeds the same as any Linux dis
 
 ##### Building
 
-- `git clone -b master --single-branch git@gitlab.ekata.io:baza-foundation/baz-token.git`
-- `cd baz-token`
+- `git clone -b master --single-branch https://gitlab.ekata.io/baza-foundation/baza-coin.git`
+- `cd baza-coin`
 - `mkdir build`
 - `cd build`
 - `cmake ..`
@@ -207,7 +207,7 @@ Cryptonote Developers, Bytecoin Developers, Monero Developers, Forknote Project,
 
 ### Copypasta for license when editing files
 
-Hi Baza contributor, thanks for forking and sending back Pull Requests. Extensive docs about contributing are in the works or elsewhere. For now this is the bit we need to get into all the files we touch. Please add it to the top of the files, see [src/config/CryptoNoteConfig.h](https://gitlab.ekata.io/baza-foundation/baz-token/blob/master/src/config/CryptoNoteConfig.h) for an example.
+Hi Baza contributor, thanks for forking and sending back Pull Requests. Extensive docs about contributing are in the works or elsewhere. For now this is the bit we need to get into all the files we touch. Please add it to the top of the files, see [src/config/CryptoNoteConfig.h](https://gitlab.ekata.io/baza-foundation/baza-coin/-/blob/master/src/config/CryptoNoteConfig.h) for an example.
 
 ```
 // Copyright (c) 2012-2017, The CryptoNote developers, The Bytecoin developers
